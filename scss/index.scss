@@ -1,0 +1,498 @@
+$brand1:#005387;
+$brand2:#fdb913;
+$textcolor:#919597;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@mixin backgroundparallaxeffect($value,$colorval)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url($value);
+    background-attachment: fixed;
+    z-index: -2;
+    background-color: $colorval;
+    // filter: blur(1.9px);
+}
+@mixin frameeffect
+{
+    .frame 
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+    }
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+body 
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6rem;
+}
+a,a:hover
+{
+    text-decoration: none;
+    color: black;
+}
+h1 
+{
+    font-size: 3.2rem;
+}
+h2 
+{
+    font-size: 2.4rem;
+}
+h3 
+{
+    font-size: 1.9rem;
+}
+.container 
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.fl 
+{
+    float: left;
+}
+.fr
+{
+    float: right;
+}
+.clear 
+{
+    clear: both;
+}
+// header starts
+header 
+{
+    position: relative;
+    color: white;
+    .background
+    {
+        @include backgroundparallaxeffect("https://wedesignthemes.com/html/kidslife/images/cloud-bg.png",$brand1);
+       
+    }
+    .cartoon1 
+    {
+        position: absolute;
+        top: 64%;
+        left: 7%;
+        z-index: 999;
+        img 
+        {
+            width: 10rem;
+            height: 7rem;
+        }
+    }
+    .cartoon2
+    {
+        position: absolute;
+        top: 40%;
+        right: 7%;
+        z-index: 999;
+        img 
+        {
+            width: 7rem;
+            height: 10rem;
+        }
+    }
+    nav 
+    {
+        border-bottom: solid 3px;
+        .container1
+        {
+            width: 70%;
+            .row 
+            {
+                .topl
+                {
+                    img 
+                    {
+                        height: 11rem;
+                        width: 100%;
+                    }
+                }
+                input 
+                {
+                    border-radius: 13px;
+                    outline: none;
+                    border: none;
+                }
+                .topr
+                {
+                    li 
+                    {
+                        a 
+                        {
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+    .banner 
+    {
+        width: 70%;
+        padding: 4rem 0;
+        .carousel-indicators [data-bs-target]
+        {
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+
+        }
+        .carousel-indicators .active
+        {
+            width: 4.2rem;
+            
+        }
+        .carousel-item 
+        {
+            .content 
+            {
+                .text 
+                {
+                    color: white;
+                    .subtitle 
+                    {
+                        font-size: 2.8rem;
+                        font-weight: 600;
+                        color: $brand2;
+                        margin-bottom: 2rem;
+                        font-family: 'Permanent Marker', cursive;
+                    }
+                    .title 
+                    {
+                        font-size: 5.4rem;
+                        font-weight: 700;
+                        margin-right: -26.9rem;
+                        margin-bottom: 2rem;
+                        font-family: 'Permanent Marker', cursive;
+                    }
+                    .desc
+                    {
+                        margin-bottom: 4rem;
+                    }
+                    .press 
+                    {
+                        padding: 0.49rem 2rem;
+                        border-radius: 3rem;
+                        margin-bottom: 2rem;
+                        display: inline-block;
+                        width: 20rem;
+                        height: 4.4rem;
+                        border: none;
+                        outline: none;
+                        color:$brand1
+                    }
+                }
+            }
+        }
+        
+    }
+
+}
+// carousel starts
+.carousel
+{
+    
+    .background1 
+    {
+        @include backgroundparallaxeffect("https://wedesignthemes.com/html/kidslife/images/cloud-bg.png",$brand1);
+        bottom:50%;
+    }
+    .background2
+    {
+        @include backgroundparallaxeffect(" https://wedesignthemes.com/html/kidslife/images/product_bg.png",#d2d2d2);
+        top:50%;
+    }
+    .container1 
+    {
+        width: 80%!important;
+        .head 
+        {
+            .fl 
+            {
+                color: $brand1;
+                font-weight: 700;
+            }
+            .fr 
+            {
+                color: $brand2;
+            }
+            margin-bottom: 2rem;
+            
+        }
+        .content 
+        {
+            padding: 2rem;
+            border-radius: 2rem;
+            border: solid 1px #cfcbcb;
+            .subcontent 
+            {
+                padding: 2rem;
+                .title 
+                {
+                    font-size: 1.9rem;
+                    font-weight: 700;
+                    color: $brand1;
+                    padding: 0.5rem;
+                }
+                .level 
+                {
+                   padding: 0.5rem;
+                    span 
+                    {
+                        color: $textcolor;
+                        s 
+                        {
+                            color: $brand2;
+                            padding-right: 0.5rem;
+                        }
+                    }
+                }
+                .articles 
+                {
+                    padding: 0.5rem;
+                    color: $textcolor;
+                }
+                .reviews 
+                {
+                    padding: 1rem;
+                    color: $textcolor;
+                    .fas 
+                    {
+                        color: $brand2;
+                    }
+                }
+                .press 
+                {
+                    button 
+                    {
+                        padding: 0;
+                        border: solid 1px;
+                        border-radius: 1rem;
+                        background: $brand1;
+                        color: white;
+                    }
+                    .fas 
+                    {
+                        border: solid 1px;
+                        padding: 10px;
+                        border-radius: 1rem;
+                    }
+                    .fa-heart:before
+                    {
+                        color: $brand2;
+                    }
+                }
+            }
+        }
+        .g-4
+        {
+            background-color: white;
+            border-radius: 2rem;
+            padding: 3rem;
+        }
+        .poster 
+        {
+            position: relative;
+            @include frameeffect()
+        }
+        .owl-carousel 
+        {
+            .col-lg-4
+            {
+                width: 95%;
+            }
+        }
+    }
+
+}
+// benefits starts
+.benefits
+{
+    position: relative;
+    padding-bottom: 10rem;
+    .background
+    {
+        @include backgroundparallaxeffect(" https://wedesignthemes.com/html/kidslife/images/product_bg.png",#d2d2d2);
+        filter:blur(2px)
+    }
+    .container 
+    {
+        .row 
+        {
+            padding-top: 10rem;
+            .title
+            {
+                font-size: 2.8rem;
+                font-weight: 700;
+                color: $brand1;
+                margin-bottom: 2rem;
+                
+            }
+            button 
+            {
+                font-size: 1.6rem;
+                
+            } 
+            .desc 
+            {
+                margin-bottom: 2rem;
+                font-weight: 500;
+                color: rgb(97, 97, 97)
+            }  
+        }
+    }
+}
+// features starts
+.features 
+{   
+    background-color: $brand1;
+    color: white;
+    padding: 7rem 0;
+    .container 
+    {
+        span 
+        {
+            margin-bottom: 2rem
+        }
+        .num 
+        {
+            font-size: 2.8rem;
+        }
+        .icon 
+        {
+            img 
+            {
+                width: 7rem;
+                height: 4rem
+            }
+        }
+    }
+}
+// second carousel starts
+.carousel1 
+{
+    @extend .carousel;
+    position: relative;
+    padding-bottom:15rem;
+    padding-top:10rem;
+    .head 
+    {
+        color: $brand1;
+    }
+    .g-4
+    {
+        padding: 3rem;
+    }
+    .background 
+    {
+        @include backgroundparallaxeffect(" https://wedesignthemes.com/html/kidslife/images/product_bg.png",#d2d2d2);
+        filter:blur(2px);
+    }
+    .poster 
+    {
+        position: relative;
+        @include frameeffect();
+    }
+    .content 
+    {
+        background: white;
+    }
+}
+// video section starts
+.video 
+{
+    position:  relative;
+    color: $brand1;
+    padding:10rem 0;
+    &:before 
+    {
+        position: absolute;
+        content:"";
+        background: url("https://wedesignthemes.com/html/kidslife/images/footer_top_bg.png");
+        background-position: -38% 100%;
+        background-size: cover;
+        background-repeat: repeat;
+        top:-100px;
+        left:0;
+        right: 0;
+        z-index: 999;
+        height: 10rem;
+
+
+    }
+    .background 
+    {
+        @include backgroundparallaxeffect(" https://wedesignthemes.com/html/kidslife/images/footer_bg.png",white);
+    }
+    .container 
+    {
+        .title 
+        {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 5rem;
+        }
+        .desc 
+        {
+            text-align: justify;
+        }
+        .subtitle 
+        {
+            @extend .title;
+            color: $brand2;
+            margin-bottom: 2rem;
+        }
+        img 
+        {
+            .img 
+            {
+                position: relative;
+                top: 0;
+            }
+        }
+    }
+}
+// footer starts
+footer 
+{
+    position: relative;
+    .background
+    {
+        @include backgroundparallaxeffect("https://wedesignthemes.com/html/kidslife/images/cloud-bg.png",$brand1);
+       
+    }
+    position: relative;
+    // background: $brand1;
+    padding: 10rem 0;
+    .container1 
+    {
+        width: 80%;
+        margin: 0 auto;
+        color: white;
+    }
+    li 
+    {
+        padding: 1.5rem 0;
+    }
+}

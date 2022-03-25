@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  position: relative;
+  color: white;
+}
+
+header .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://wedesignthemes.com/html/kidslife/images/cloud-bg.png");
+  background-attachment: fixed;
+  z-index: -2;
+  background-color: #005387;
+}
+
+header .cartoon1 {
+  position: absolute;
+  top: 64%;
+  left: 7%;
+  z-index: 999;
+}
+
+header .cartoon1 img {
+  width: 10rem;
+  height: 7rem;
+}
+
+header .cartoon2 {
+  position: absolute;
+  top: 40%;
+  right: 7%;
+  z-index: 999;
+}
+
+header .cartoon2 img {
+  width: 7rem;
+  height: 10rem;
+}
+
+header nav {
+  border-bottom: solid 3px;
+}
+
+header nav .container1 {
+  width: 70%;
+}
+
+header nav .container1 .row .topl img {
+  height: 11rem;
+  width: 100%;
+}
+
+header nav .container1 .row input {
+  border-radius: 13px;
+  outline: none;
+  border: none;
+}
+
+header nav .container1 .row .topr li a {
+  color: white;
+}
+
+header .banner {
+  width: 70%;
+  padding: 4rem 0;
+}
+
+header .banner .carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+header .banner .carousel-indicators .active {
+  width: 4.2rem;
+}
+
+header .banner .carousel-item .content .text {
+  color: white;
+}
+
+header .banner .carousel-item .content .text .subtitle {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #fdb913;
+  margin-bottom: 2rem;
+  font-family: 'Permanent Marker', cursive;
+}
+
+header .banner .carousel-item .content .text .title, header .banner .carousel-item .content .text .video .container .subtitle, .video .container header .banner .carousel-item .content .text .subtitle {
+  font-size: 5.4rem;
+  font-weight: 700;
+  margin-right: -26.9rem;
+  margin-bottom: 2rem;
+  font-family: 'Permanent Marker', cursive;
+}
+
+header .banner .carousel-item .content .text .desc {
+  margin-bottom: 4rem;
+}
+
+header .banner .carousel-item .content .text .press {
+  padding: 0.49rem 2rem;
+  border-radius: 3rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  width: 20rem;
+  height: 4.4rem;
+  border: none;
+  outline: none;
+  color: #005387;
+}
+
+.carousel .background1, .carousel1 .background1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://wedesignthemes.com/html/kidslife/images/cloud-bg.png");
+  background-attachment: fixed;
+  z-index: -2;
+  background-color: #005387;
+  bottom: 50%;
+}
+
+.carousel .background2, .carousel1 .background2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(" https://wedesignthemes.com/html/kidslife/images/product_bg.png");
+  background-attachment: fixed;
+  z-index: -2;
+  background-color: #d2d2d2;
+  top: 50%;
+}
+
+.carousel .container1, .carousel1 .container1 {
+  width: 80% !important;
+}
+
+.carousel .container1 .head, .carousel1 .container1 .head {
+  margin-bottom: 2rem;
+}
+
+.carousel .container1 .head .fl, .carousel1 .container1 .head .fl {
+  color: #005387;
+  font-weight: 700;
+}
+
+.carousel .container1 .head .fr, .carousel1 .container1 .head .fr {
+  color: #fdb913;
+}
+
+.carousel .container1 .content, .carousel1 .container1 .content {
+  padding: 2rem;
+  border-radius: 2rem;
+  border: solid 1px #cfcbcb;
+}
+
+.carousel .container1 .content .subcontent, .carousel1 .container1 .content .subcontent {
+  padding: 2rem;
+}
+
+.carousel .container1 .content .subcontent .title, .carousel1 .container1 .content .subcontent .title, .carousel .container1 .content .subcontent .video .container .subtitle, .video .container .carousel .container1 .content .subcontent .subtitle, .carousel1 .container1 .content .subcontent .video .container .subtitle, .video .container .carousel1 .container1 .content .subcontent .subtitle {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #005387;
+  padding: 0.5rem;
+}
+
+.carousel .container1 .content .subcontent .level, .carousel1 .container1 .content .subcontent .level {
+  padding: 0.5rem;
+}
+
+.carousel .container1 .content .subcontent .level span, .carousel1 .container1 .content .subcontent .level span {
+  color: #919597;
+}
+
+.carousel .container1 .content .subcontent .level span s, .carousel1 .container1 .content .subcontent .level span s {
+  color: #fdb913;
+  padding-right: 0.5rem;
+}
+
+.carousel .container1 .content .subcontent .articles, .carousel1 .container1 .content .subcontent .articles {
+  padding: 0.5rem;
+  color: #919597;
+}
+
+.carousel .container1 .content .subcontent .reviews, .carousel1 .container1 .content .subcontent .reviews {
+  padding: 1rem;
+  color: #919597;
+}
+
+.carousel .container1 .content .subcontent .reviews .fas, .carousel1 .container1 .content .subcontent .reviews .fas {
+  color: #fdb913;
+}
+
+.carousel .container1 .content .subcontent .press button, .carousel1 .container1 .content .subcontent .press button {
+  padding: 0;
+  border: solid 1px;
+  border-radius: 1rem;
+  background: #005387;
+  color: white;
+}
+
+.carousel .container1 .content .subcontent .press .fas, .carousel1 .container1 .content .subcontent .press .fas {
+  border: solid 1px;
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+.carousel .container1 .content .subcontent .press .fa-heart:before, .carousel1 .container1 .content .subcontent .press .fa-heart:before {
+  color: #fdb913;
+}
+
+.carousel .container1 .g-4, .carousel1 .container1 .g-4 {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+.carousel .container1 .poster, .carousel1 .container1 .poster {
+  position: relative;
+}
+
+.carousel .container1 .poster .frame, .carousel1 .container1 .poster .frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+.carousel .container1 .owl-carousel .col-lg-4, .carousel1 .container1 .owl-carousel .col-lg-4 {
+  width: 95%;
+}
+
+.benefits {
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+.benefits .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(" https://wedesignthemes.com/html/kidslife/images/product_bg.png");
+  background-attachment: fixed;
+  z-index: -2;
+  background-color: #d2d2d2;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.benefits .container .row {
+  padding-top: 10rem;
+}
+
+.benefits .container .row .title, .benefits .video .container .row .subtitle, .video .benefits .container .row .subtitle {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #005387;
+  margin-bottom: 2rem;
+}
+
+.benefits .container .row button {
+  font-size: 1.6rem;
+}
+
+.benefits .container .row .desc {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: #616161;
+}
+
+.features {
+  background-color: #005387;
+  color: white;
+  padding: 7rem 0;
+}
+
+.features .container span {
+  margin-bottom: 2rem;
+}
+
+.features .container .num {
+  font-size: 2.8rem;
+}
+
+.features .container .icon img {
+  width: 7rem;
+  height: 4rem;
+}
+
+.carousel1 {
+  position: relative;
+  padding-bottom: 15rem;
+  padding-top: 10rem;
+}
+
+.carousel1 .head {
+  color: #005387;
+}
+
+.carousel1 .g-4 {
+  padding: 3rem;
+}
+
+.carousel1 .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(" https://wedesignthemes.com/html/kidslife/images/product_bg.png");
+  background-attachment: fixed;
+  z-index: -2;
+  background-color: #d2d2d2;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.carousel1 .poster {
+  position: relative;
+}
+
+.carousel1 .poster .frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+.carousel1 .content {
+  background: white;
+}
+
+.video {
+  position: relative;
+  color: #005387;
+  padding: 10rem 0;
+}
+
+.video:before {
+  position: absolute;
+  content: "";
+  background: url("https://wedesignthemes.com/html/kidslife/images/footer_top_bg.png");
+  background-position: -38% 100%;
+  background-size: cover;
+  background-repeat: repeat;
+  top: -100px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: 10rem;
+}
+
+.video .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(" https://wedesignthemes.com/html/kidslife/images/footer_bg.png");
+  background-attachment: fixed;
+  z-index: -2;
+  background-color: white;
+}
+
+.video .container .title, .video .container .subtitle {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
+}
+
+.video .container .desc {
+  text-align: justify;
+}
+
+.video .container .subtitle {
+  color: #fdb913;
+  margin-bottom: 2rem;
+}
+
+.video .container img .img {
+  position: relative;
+  top: 0;
+}
+
+footer {
+  position: relative;
+  position: relative;
+  padding: 10rem 0;
+}
+
+footer .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://wedesignthemes.com/html/kidslife/images/cloud-bg.png");
+  background-attachment: fixed;
+  z-index: -2;
+  background-color: #005387;
+}
+
+footer .container1 {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+}
+
+footer li {
+  padding: 1.5rem 0;
+}
+/*# sourceMappingURL=index.css.map */
